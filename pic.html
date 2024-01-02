@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters</title>
+    <style>
+        body{
+            background-color:blue;
+        }
+        section{
+            width: 100%;
+            height: 80vh;
+            background-color: blue;
+            border-radius: 10px;
+            display: flex;
+            cursor: pointer;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+        }
+        div{
+            width: 50px;
+            height: 400px;
+            background-color: chocolate;
+            margin-left: 10px;
+            border-radius: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 3s;
+        }
+        p{
+        color: antiquewhite;
+        font-size: 40px;
+        margin-left: 170px;
+        }
+        #one{
+            width: 700px;
+            background-image: url("jan1.jpg");
+        }
+        #two{
+          
+            background-image: url("14jan.jpg");
+        }
+        #three{
+            
+            background-image: url("jan26.jpg");
+        }
+        #four{
+            
+            background-image: url("Sunday.jpg");
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div id="one" onclick="oneSize()"></div>
+    <div id="two" onclick="twoSize()"></div>
+    <div id="three" onclick="threeSize()"></div>
+    <div id="four" onclick="fourSize()"></div>
+</section>
+<p> List of Holidays in Jan</p>
+
+<script>
+
+    let first = document.getElementById('one')
+    let second = document.getElementById('two')
+    let third = document.getElementById('three')
+    let fourth = document.getElementById('four')
+
+    function oneSize()
+        {
+            first.style.width = '700px'
+            second.style.width = '50px'
+            third.style.width = '50px'
+            fourth.style.width = '50px'
+        }
+        function twoSize()
+        {
+            first.style.width = '50px'
+            second.style.width = '700px'
+            third.style.width = '50px'
+            fourth.style.width = '50px'
+        }
+        function threeSize()
+        {
+            first.style.width = '50px'
+            second.style.width = '50px'
+            third.style.width = '700px'
+            fourth.style.width = '50px'
+        }
+        function fourSize()
+        {
+            first.style.width = '50px'
+            second.style.width = '50px'
+            third.style.width = '50px'
+            fourth.style.width = '700px'
+        }
+    
+    
+    
+    </script>
+
+</body>
+</html>
